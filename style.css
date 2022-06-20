@@ -1,0 +1,210 @@
+
+/* =========================================================== */
+/* Base Styles */
+/* =========================================================== */
+html {
+  font-size: .625rem;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* =========================================================== */
+/* Group Styles */
+/* =========================================================== */
+
+/* Margin */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.order-summary__paragraph,
+.order-summary__plan-display-area,
+.checkout-payment-button {
+  margin-bottom: 25px;
+}
+
+/* Padding */
+.order-summary__content {
+  padding: 25px;
+}
+
+.order-summary__plan-display-area,
+.checkout-payment-button {
+  padding: 15px;
+}
+
+/* Font Size */
+.order-summary__paragraph,
+.plan-heading,
+.plan-price,
+.change-plan-link,
+.checkout-payment-button,
+.cancel-button,
+.attribution {
+  font-size: 1.6rem;
+}
+
+/* Text Align */
+.order-summary__heading,
+.order-summary__paragraph,
+.order-summary__buttons,
+.attribution {
+  text-align: center;
+}
+
+/* Text Decoration */
+.change-plan-link:hover,
+.checkout-payment-button,
+.cancel-button {
+  text-decoration: none;
+}
+
+/* Line Height */
+.order-summary__paragraph,
+.attribution {
+  line-height: 1.5;
+}
+
+/* Font Weight */
+.order-summary__heading,
+.plan-heading {
+  font-weight: 900;
+}
+
+.change-plan-link,
+.checkout-payment-button,
+.cancel-button {
+  font-weight: 700;
+}
+
+/* Color */
+.order-summary__heading,
+.plan-heading,
+.cancel-button:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.order-summary__paragraph,
+.plan-price,
+.cancel-button {
+  color: hsl(224, 23%, 55%);
+}
+
+.change-plan-link,
+.attribution-link {
+  color: hsl(245, 75%, 52%);
+}
+
+/* Display */
+.main-content,
+.order-summary__plan-display-area,
+.music-plan-wrapper,
+.plan-details-wrapper {
+  display: flex;
+}
+
+.main-content,
+.plan-details-wrapper {
+  flex-direction: column;
+}
+
+.main-content,
+.plan-details-wrapper {
+  justify-content: center;
+}
+
+.main-content,
+.order-summary__plan-display-area {
+  align-items: center;
+}
+
+.order-summary__illustration,
+.checkout-payment-button {
+  display: block;
+}
+
+/* Transitions */
+.change-plan-link,
+.cancel-button {
+  transition: color 250ms;
+}
+
+/* =========================================================== */
+/* Main Content Styles */
+/* =========================================================== */
+
+.main-content {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("img/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  min-width: 375px;
+  padding: 25px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.order-summary-component {
+  max-width: 375px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 25px 10px -5px hsl(225, 100%, 92%);
+}
+
+.order-summary__illustration {
+  width: 100%;
+}
+
+.order-summary__content {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.order-summary__heading {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.order-summary__plan-display-area {
+  background-color: hsl(225, 100%, 98%);
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.music-icon {
+  margin-right: 20px;
+}
+
+.change-plan-link:hover {
+  color: hsla(245, 75%, 52%, .75);
+}
+
+.checkout-payment-button {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(0, 100%, 100%);
+  border-radius: 10px;
+  box-shadow: 0px 20px 15px hsl(250, 75%, 92%);
+  transition: background-color 250ms;
+}
+
+.checkout-payment-button:hover {
+  background-color: hsla(245, 75%, 52%, .75);
+}
+
+/* =========================================================== */
+/* Breakpoints */
+/* =========================================================== */
+
+@media (min-width: 376px) {
+  .main-content {
+    background-image: url("img/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-content {
+    background-size: contain;
+  }
+}
